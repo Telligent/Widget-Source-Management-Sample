@@ -1,0 +1,6 @@
+*.suo
+.DS_Store
+Samples/bin
+Samples/obj
+FactoryDefaultWidgetFileManifestUpdater/bin
+FactoryDefaultWidgetFileManifestUpdater/obj
