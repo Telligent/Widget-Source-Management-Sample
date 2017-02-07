@@ -71,6 +71,7 @@ namespace FactoryDefaultWidgetFileManifestUpdater
             catch (Exception ex)
             {
                 System.Console.Error.Write(ex.ToString());
+                return (int)ExitCode.Error;
             }
 
             return (int)ExitCode.Success;
