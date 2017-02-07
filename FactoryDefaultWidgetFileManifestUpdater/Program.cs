@@ -17,6 +17,7 @@ namespace FactoryDefaultWidgetFileManifestUpdater
 
     class Program
     {
+        
         static XmlDocument _project;
         static string _basePath;
         static bool _changedProject;
@@ -28,11 +29,20 @@ namespace FactoryDefaultWidgetFileManifestUpdater
 
         static int Main(string[] args)
         {
+
+#if DEBUG
+            var _baseDirectory = Environment.CurrentDirectory.Replace("\\FactoryDefaultWidgetFileManifestUpdater\\bin\\Debug", "");
+            _projectFilename = $@"{_baseDirectory}\Samples\Samples.csproj ";
+            _cfsPath = $@"{_baseDirectory}\FactoryDefaultWidgetFileManifestUpdater\";
+            _factoryDefaultProviderId = Guid.Parse("fa801aba-84a0-4746-92cc-b418a7106c0b");
+            _outputFileName = $@"{_baseDirectory}\Samples\Generated\FactoryDefaultWidgetFileManifest.cs";
+#else
             if (args.Length < 4)
             {
                 System.Console.Error.WriteLine("Usage: FactoryDefaultWidgetFileManifestUpdater /proj:PROJECT_FILE /providerid:GUID /cfs:CFS_BASE_PATH /out:OUTPUT_FILE");
                 return (int)ExitCode.InvalidParameters;
             }
+#endif
 
             try
             {
@@ -61,7 +71,6 @@ namespace FactoryDefaultWidgetFileManifestUpdater
             catch (Exception ex)
             {
                 System.Console.Error.Write(ex.ToString());
-                return (int)ExitCode.Error;
             }
 
             return (int)ExitCode.Success;
@@ -78,8 +87,8 @@ namespace Samples.Generated
 	internal static class FactoryDefaultWidgetFileManifest
 	{
 		internal static List<InstallableFile> Files()
-        {
-            var files = new List<InstallableFile>();
+		{
+			var files = new List<InstallableFile>();
 			
 ");
 

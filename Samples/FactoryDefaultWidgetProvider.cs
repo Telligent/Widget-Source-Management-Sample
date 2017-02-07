@@ -18,7 +18,7 @@ namespace Samples
 
         private Version _emptyVersion = new Version(0, 0, 0, 0);
 #if DEBUG
-        private Version _version = new Version(0, 0, 0, 0);
+        private Version _version = new Version(1, 0, 0, 0);
 #else
         private Version _version = null;
 #endif

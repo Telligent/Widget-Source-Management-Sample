@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Samples</RootNamespace>
     <AssemblyName>Samples</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,12 +45,14 @@
     <Reference Include="Telligent.Evolution.Components">
       <HintPath>..\..\..\SVN\Social-Trunk\Telligent.Evolution.Web\bin\Telligent.Evolution.Components.dll</HintPath>
     </Reference>
+    <Reference Include="Telligent.Evolution.Platform, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\Telligent.Evolution.Platform.dll</HintPath>
+    </Reference>
     <Reference Include="Telligent.Evolution.ScriptedContentFragments, Version=9.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\SVN\Social-Trunk\Telligent.Evolution.Web\bin\Telligent.Evolution.ScriptedContentFragments.dll</HintPath>
     </Reference>
-    <EmbeddedResource Include="filestorage\defaultwidgets\fa801aba84a0474692ccb418a7106c0b\TestSample.xml" />
-    <EmbeddedResource Include="filestorage\defaultwidgets\fa801aba84a0474692ccb418a7106c0b\0afafc2059de42b89470224a7bf60342\renamed.vm" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Generated\FactoryDefaultWidgetFileManifest.cs" />
