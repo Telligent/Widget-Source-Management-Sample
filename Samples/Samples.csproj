@@ -39,9 +39,19 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="Telligent.Evolution.Platform, Version=10.1.0.4572, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Telligent.Evolution.Api">
+      <HintPath>..\..\..\SVN\Social-Trunk\Telligent.Evolution.Web\bin\Telligent.Evolution.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="Telligent.Evolution.Components">
+      <HintPath>..\..\..\SVN\Social-Trunk\Telligent.Evolution.Web\bin\Telligent.Evolution.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Telligent.Evolution.Platform, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\Telligent.Evolution.Platform.dll</HintPath>
+      <HintPath>References\Telligent.Evolution.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Telligent.Evolution.ScriptedContentFragments, Version=9.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SVN\Social-Trunk\Telligent.Evolution.Web\bin\Telligent.Evolution.ScriptedContentFragments.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
