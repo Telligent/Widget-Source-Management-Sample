@@ -45,10 +45,6 @@
     <Reference Include="Telligent.Evolution.Components">
       <HintPath>..\..\..\SVN\Social-Trunk\Telligent.Evolution.Web\bin\Telligent.Evolution.Components.dll</HintPath>
     </Reference>
-    <Reference Include="Telligent.Evolution.Platform, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>References\Telligent.Evolution.Platform.dll</HintPath>
-    </Reference>
     <Reference Include="Telligent.Evolution.ScriptedContentFragments, Version=9.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\SVN\Social-Trunk\Telligent.Evolution.Web\bin\Telligent.Evolution.ScriptedContentFragments.dll</HintPath>
